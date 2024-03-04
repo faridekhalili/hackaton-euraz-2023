@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import { MockApi } from "../api-map/mock-api";
 import updateTime = MockApi.updateTime;
 import { DateTime } from "../utils/DateTime";
-import React from "react";
 
 type LegendProps = {
   updateTime: number;
@@ -100,11 +99,11 @@ const WrapFlex1 = styled.div`
   color: #2b2b2a;
 `;
 
-const Element = React.memo(styled.div`
+const Element = styled.div`
   ${row};
   gap: 8px;
   align-items: center;
-`);
+`;
 const LetterIcon = styled.div`
   ${row};
   //gap: 8px;
